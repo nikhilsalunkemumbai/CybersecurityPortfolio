@@ -1,24 +1,20 @@
-<div align="center">
-  <img src="https://via.placeholder.com/1200x250?text=Cybersecurity+Portfolio+Banner" alt="Cybersecurity Portfolio Banner" width="100%">
-</div>
-
-# Cybersecurity Portfolio: 15 Bite-Sized Tools for the Modern Defender
+# Cybersecurity Portfolio: A Collection of 15 Security Tool Demonstrations
 
 ---
 
-## 🚀 Welcome to My Cybersecurity Tool Showcase!
+## Introduction
 
-This repository presents a curated collection of **15 bite-sized security tools**, meticulously crafted across **four essential programming languages: Python, Go, Rust, and C#**. Designed as focused demonstrations, each tool addresses a specific cybersecurity challenge, adhering to strict constraints to highlight clarity, efficiency, and foundational engineering principles.
+This repository showcases a curated collection of **15 specialized cybersecurity tools**, developed across **four prominent programming languages: Python, Go, Rust, and C#**. Each tool is designed to address a distinct cybersecurity challenge, emphasizing clarity, efficiency, and adherence to foundational engineering principles through strict development constraints. This portfolio serves as a demonstration of practical skills in security tool development and a commitment to robust engineering practices.
 
 ---
 
-### ✨ Key Highlights
+### Key Highlights
 
-*   🛡️ **15 Practical Tools:** Covering diverse areas from Security Operations to Systems Safety.
-*   💻 **Multi-Language Proficiency:** Demonstrating expertise in Python, Go, Rust, and C#.
-*   🎯 **Constraint-Driven Design:** Each tool is ≤300 lines, dependency-free, and CLI-only for clear focus.
-*   ✅ **Validated & Tested:** Rigorously developed with adherence to coding standards and comprehensive testing.
-*   🔗 **LinkedIn Showcase Ready:** Built as a professional portfolio artifact to highlight advanced cybersecurity skills.
+*   **15 Practical Tools:** Encompassing diverse domains from security operations to systems-level safety.
+*   **Multi-Language Proficiency:** Demonstrating expertise across Python, Go, Rust, and C#.
+*   **Constraint-Driven Design:** Each tool adheres to a ≤300 line limit, is dependency-free, and operates via a Command-Line Interface (CLI) for focused functionality.
+*   **Validated & Tested:** Developed with rigorous adherence to coding standards and comprehensive testing protocols.
+*   **Professional Portfolio Artifact:** Structured to effectively highlight advanced cybersecurity and software engineering capabilities.
 
 ---
 
