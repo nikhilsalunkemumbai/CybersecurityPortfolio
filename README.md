@@ -46,7 +46,7 @@ git clone https://github.com/nikhilsalunkemumbai/cybersecurity-tools.git
 cd cybersecurity-tools
 
 # Run setup script (optional)
-./scripts/setup_environment.sh
+python ./scripts/setup_github_repo.py
 
 # Test a Python tool
 cd python/01_csv_security_cleaner
@@ -62,7 +62,7 @@ go run main.go --help
 Each tool includes comprehensive tests:
 ```bash
 # Run all tests across all languages
-./scripts/run_all_tests.sh
+python ./scripts/run_all_tests.py
 
 # Test specific language
 cd python/01_csv_security_cleaner

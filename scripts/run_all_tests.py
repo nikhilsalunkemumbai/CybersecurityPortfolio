@@ -23,7 +23,8 @@ def run_python_tests(base_dir):
     total = 0
     python_dir = os.path.join(base_dir, 'python')
     if not os.path.exists(python_dir):
-        print(f"  {RED}Skipping Python: Directory not found ({python_dir}){NC}")        return 0, 0, failures
+        print(f"  {RED}Skipping Python: Directory not found ({python_dir}){NC}")
+        return 0, 0, failures
 
     for tool_dir_name in os.listdir(python_dir):
         tool_path = os.path.join(python_dir, tool_dir_name)
@@ -35,8 +36,9 @@ def run_python_tests(base_dir):
             reqs_path = os.path.join(tool_path, 'requirements.txt')
             if os.path.exists(reqs_path):
                 stdout, stderr, exit_code = run_command([sys.executable, '-m', 'pip', 'install', '-r', reqs_path], cwd=tool_path)
-                            if exit_code != 0:
-                                print(f"  {RED}Failed to install requirements for {tool_dir_name}:{NC}\n{stderr}")                    failures += 1
+                if exit_code != 0:
+                    print(f"  {RED}Failed to install requirements for {tool_dir_name}:{NC}\n{stderr}")
+                    failures += 1
                     continue
 
             # Run pytest

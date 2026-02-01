@@ -43,7 +43,7 @@ def apply_highlighting(line: str, keywords: list, case_sensitive: bool) -> str:
         # Use regex to find and replace all occurrences of the keyword
         # Escape special characters in the keyword
         escaped_keyword = re.escape(keyword)
-        modified_line = re.sub(f'({escaped_keyword})', f'{color}\1{RESET}', modified_line, flags=flags)
+        modified_line = re.sub(f'({escaped_keyword})', f'{color}\\1{RESET}', modified_line, flags=flags)
     return modified_line
 
 def should_process_line(line: str, includes: list, excludes: list, case_sensitive: bool) -> bool:
