@@ -1,0 +1,17 @@
+--- File Integrity Report ---
+
+Path: F:\RPG_ROLEPLAYING\RAD\phase_1\GO\07_basic_file_integrity_monitor\sample_input\monitored_file_1.txt
+Status: MODIFIED
+Old: eabd7c0ad0d57ca1ddc5ddccf4612702caf80e7c2988767b241b42e8cb421a37
+New: 7c5939b7eec54d12976d9deb916aa241df94b6c36c54ce1dad3d2e0b2496d4bc
+Msg: Hash mismatch
+
+Path: F:\RPG_ROLEPLAYING\RAD\phase_1\GO\07_basic_file_integrity_monitor\sample_input\new_monitored_file.txt
+Status: ADDED
+New: fb984db741588970db29f6ee8a9a1ca8d3841f9dcc8a641efb3e3a1d04451b9b
+Msg: New file
+
+Path: F:\RPG_ROLEPLAYING\RAD\phase_1\GO\07_basic_file_integrity_monitor\sample_input\monitored_dir\monitored_file_2.txt
+Status: DELETED
+Old: a8e3a4390be2a9ed10e8e500b838607326b6112cf2377b2803ef5f2eda8fbd43
+Msg: File deleted

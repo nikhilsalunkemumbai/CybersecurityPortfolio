@@ -1,0 +1,69 @@
+# Tool Manifest for: Binary String Extractor
+
+# --- Metadata ---
+name: "Binary String Extractor"
+tool_id: "phase1-rust-10"
+phase: 1
+category: "Rust"
+language: "Rust"
+version: "0.1.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/RUST/10_binary_string_extractor"
+
+# --- Logic & Purpose ---
+purpose: "Extracts human-readable strings from binary files, useful for malware analysis, reverse engineering, and digital forensics."
+core_logic:
+  - "Reads a binary file byte by byte."
+  - "Identifies sequences of printable ASCII characters."
+  - "Filters extracted strings based on a configurable minimum length."
+  - "Outputs strings to console or a specified file."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Planned"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Tool design and purpose defined based on TRACKER.md."
+  - event: "Implementation"
+    date: "2026-01-31"
+    version: "0.2.0"
+    notes: "Initial implementation of the core logic in src/main.rs."
+  - event: "Testing"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool compiled successfully. Tested with sample binary files, verifying default and custom minimum length extraction, and verbose output to file."
+  - event: "Completed"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements."
+  - event: "Standards Validation"
+    date: "2026-01-31"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. All standards met, including <=300 lines of code."
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Will use Rust's `std::env::args` for consistent CLI flags: -i (input file), -o (output file), -m (min length), -v (verbose)."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Will exit with 0 on success, non-zero on file I/O errors or invalid arguments. Errors printed to stderr."
+  logging_output_format:
+    applied: true
+    notes: "Will use [INFO] and [ERROR] prefixes for verbose output to stderr, consistent with guide."
+  testing_methodology_structure:
+    applied: false
+    notes: "Manual testing with sample input/output will be performed. No formal 'tests/' directory yet per structure."
+  declarative_tool_metadata:
+    applied: true
+    notes: "Tool description and usage will be in the `README.md` and also as comments in the Rust `main.rs` file. Aligns with intent of a metadata block."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool, not Phase 0."

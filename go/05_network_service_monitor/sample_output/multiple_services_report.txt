@@ -1,0 +1,18 @@
+--- Network Service Monitor Report ---
+
+Service: [REDACTED]:80
+Status: DOWN
+Error: dial tcp [REDACTED]:80: connectex: No connection could be made because the target machine actively refused it.
+------------------------------
+Service: nonexistent.host:8080
+Status: DOWN
+Error: dial tcp: lookup nonexistent.host: no such host
+------------------------------
+Service: [REDACTED]:22
+Status: DOWN
+Error: dial tcp [REDACTED]:22: i/o timeout
+------------------------------
+Service: example.com:443
+Status: DOWN
+Error: dial tcp [2606:4700:90d2:8c7c:3342:916:ccc4:a209]:443: i/o timeout
+------------------------------

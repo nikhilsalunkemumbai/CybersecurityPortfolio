@@ -1,0 +1,73 @@
+# Tool Manifest for: Password Policy Enforcer
+
+# --- Metadata ---
+name: "Password Policy Enforcer"
+tool_id: "phase1-py-02"
+phase: 1
+category: "Python"
+language: "Python"
+version: "1.0.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/PYTHON/02_password_enforcer"
+
+# --- Logic & Purpose ---
+purpose: "Checks passwords against customizable policies (length, complexity, common patterns) and reports compliance."
+core_logic:
+  - "Reads a list of passwords from a text file."
+  - "Applies a configurable password policy (e.g., min length, required chars)."
+  - "Evaluates each password against the policy."
+  - "Generates a report indicating compliant and non-compliant passwords with reasons."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-29"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Implementation"
+    date: "2026-01-29"
+    version: "0.2.0"
+    notes: "Initial implementation of the script, README, and sample data."
+  - event: "Testing"
+    date: "2026-01-29"
+    version: "1.0.0"
+    notes: "Tool executed successfully and output verified with sample data."
+  - event: "Completed"
+    date: "2026-01-29"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements."
+  - event: "Added to Portfolio Overview"
+    date: "2026-01-29"
+    version: "1.0.0"
+    notes: "Entry for the tool has been added to the central PORTFOLIO_OVERVIEW.md."
+  - event: "Standards Validation, Fixes & Re-test"
+    date: "2026-01-30"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md`, issues fixed (exit codes, newline handling), and successfully re-tested."
+  - event: "Pushed to GitHub"
+    date: ""
+    version: ""
+    notes: ""
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Uses argparse for consistent CLI flags: -i, -o, --min-length, --no-upper, etc."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Exits with 0 on success, 1 on FileNotFoundError or if any passwords are non-compliant. Prints errors to stderr."
+  logging_output_format:
+    applied: true
+    notes: "Uses [INFO] and [ERROR] prefixes for verbose output, consistent with guide."
+  testing_methodology_structure:
+    applied: false
+    notes: "Manual testing performed. No formal 'tests/' directory yet per structure."
+  declarative_tool_metadata:
+    applied: true
+    notes: "Tool description and usage are in the `README.md` and also as docstrings in the Python file. Aligns with intent of a metadata block."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool, not Phase 0."

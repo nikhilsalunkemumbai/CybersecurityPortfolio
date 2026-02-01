@@ -1,0 +1,42 @@
+---
+--- HTTP Security Header Scan Report ---
+
+URL: http://nonexistent.domain
+Status: ERROR
+Error: HTTP request failed: Get "http://nonexistent.domain": dial tcp: lookup nonexistent.domain: no such host
+------------------------------
+URL: https://example.com
+Status: OK
+--- Found Security Headers ---
+  None found.
+--- Missing Recommended Headers ---
+  X-Content-Type-Options: X-Content-Type-Options prevents MIME sniffing.
+  Content-Security-Policy: Content-Security-Policy (CSP) prevents XSS and data injection attacks.
+  Referrer-Policy: Referrer-Policy controls how much referrer information is sent.
+  Permissions-Policy: Permissions-Policy allows/disallows use of browser features.
+  Strict-Transport-Security: Strict-Transport-Security (HSTS) enforces secure connections.
+  X-Frame-Options: X-Frame-Options prevents clickjacking attacks.
+------------------------------
+URL: https://google.com
+Status: OK
+--- Found Security Headers ---
+  X-Frame-Options: SAMEORIGIN
+--- Missing Recommended Headers ---
+  X-Content-Type-Options: X-Content-Type-Options prevents MIME sniffing.
+  Content-Security-Policy: Content-Security-Policy (CSP) prevents XSS and data injection attacks.
+  Referrer-Policy: Referrer-Policy controls how much referrer information is sent.
+  Permissions-Policy: Permissions-Policy allows/disallows use of browser features.
+  Strict-Transport-Security: Strict-Transport-Security (HSTS) enforces secure connections.
+------------------------------
+URL: https://badssl.com
+Status: OK
+--- Found Security Headers ---
+  None found.
+--- Missing Recommended Headers ---
+  Referrer-Policy: Referrer-Policy controls how much referrer information is sent.
+  Permissions-Policy: Permissions-Policy allows/disallows use of browser features.
+  Strict-Transport-Security: Strict-Transport-Security (HSTS) enforces secure connections.
+  X-Frame-Options: X-Frame-Options prevents clickjacking attacks.
+  X-Content-Type-Options: X-Content-Type-Options prevents MIME sniffing.
+  Content-Security-Policy: Content-Security-Policy (CSP) prevents XSS and data injection attacks.
+------------------------------

@@ -1,0 +1,2 @@
+Security Linter Report:
+- Config key 'server_port' not found in schema. Consider defining its security posture.

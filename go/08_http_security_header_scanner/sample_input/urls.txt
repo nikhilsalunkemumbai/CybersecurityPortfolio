@@ -1,0 +1,4 @@
+https://google.com
+https://example.com
+https://badssl.com
+http://nonexistent.domain

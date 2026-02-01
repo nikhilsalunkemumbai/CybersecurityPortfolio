@@ -1,0 +1,3 @@
+monitored_file_1.txt
+monitored_dir/monitored_file_2.txt
+new_monitored_file.txt

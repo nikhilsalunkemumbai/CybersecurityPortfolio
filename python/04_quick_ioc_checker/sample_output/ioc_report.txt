@@ -1,0 +1,2 @@
+--- Quick IOC Checker Report ---\n
+IOC Found: [REDACTED]\nLine Number: 1\nLine Content: INFO: User 'admin' logged in from [REDACTED].\n------------------------------\nIOC Found: malware_hash_123\nLine Number: 3\nLine Content: ERROR: Downloaded file 'report.zip' with hash 'malware_hash_123'.\n------------------------------\nIOC Found: bad.domain.com\nLine Number: 5\nLine Content: DEBUG: Connecting to bad.domain.com for updates.\n------------------------------\n

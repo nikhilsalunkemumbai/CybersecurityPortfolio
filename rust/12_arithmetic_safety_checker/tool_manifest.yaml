@@ -1,0 +1,69 @@
+# Tool Manifest for: Arithmetic Safety Checker
+
+# --- Metadata ---
+name: "Arithmetic Safety Checker"
+tool_id: "phase1-rust-12"
+phase: 1
+category: "Rust"
+language: "Rust"
+version: "0.1.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/RUST/12_arithmetic_safety_checker"
+
+# --- Logic & Purpose ---
+purpose: "Analyzes code snippets for potential arithmetic overflow/underflow vulnerabilities, crucial for security analysis in systems programming."
+core_logic:
+  - "Parses simple arithmetic expressions from an input file."
+  - "Simulates arithmetic operations for a specified integer type (e.g., u8, i32)."
+  - "Detects and reports potential overflow or underflow conditions."
+  - "Outputs analysis results to console or a specified file."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Planned"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Tool design and purpose defined based on TRACKER.md."
+  - event: "Implementation"
+    date: "2026-01-31"
+    version: "0.2.0"
+    notes: "Initial implementation of the core logic in src/main.rs."
+  - event: "Testing"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool compiled successfully. Tested with sample expressions, verifying overflow/underflow detection for various integer types (including i8), and verbose output to file."
+  - event: "Completed"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements."
+  - event: "Standards Validation"
+    date: "2026-01-31"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. All standards met, including <=300 lines of code. Fixed `Debug` trait derivation and removed unused warnings during the process."
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Uses `std::env::args` for manual parsing of CLI flags: -i (input), -o (output), -t (type), -v (verbose)."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Exits with 0 on success, 1 on error (e.g., parsing issue, file I/O error, or arithmetic issue found)."
+  logging_output_format:
+    applied: true
+    notes: "Uses [INFO] and [ERROR] prefixes for verbose output to stderr."
+  testing_methodology_structure:
+    applied: false
+    notes: "No formal test suite. Testing performed manually by running the compiled binary with sample input files and verifying the output report."
+  declarative_tool_metadata:
+    applied: true
+    notes: "The `main.rs` file contains a detailed file-level comment block describing the tool's overview, purpose, and design constraints."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool."

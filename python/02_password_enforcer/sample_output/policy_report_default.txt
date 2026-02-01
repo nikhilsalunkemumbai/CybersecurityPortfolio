@@ -1,0 +1,40 @@
+--- Password Policy Enforcement Report ---
+
+Password: Password123!
+Status: COMPLIANT
+Line: 1
+------------------------------
+Password: short
+Status: NON-COMPLIANT
+Violations: Minimum length of 8 characters not met.; Missing uppercase character.; Missing digit.; Missing special character.
+Line: 2
+------------------------------
+Password: NO_DIGIT!
+Status: NON-COMPLIANT
+Violations: Missing lowercase character.; Missing digit.
+Line: 3
+------------------------------
+Password: password
+Status: NON-COMPLIANT
+Violations: Missing uppercase character.; Missing digit.; Missing special character.
+Line: 4
+------------------------------
+Password: P@ssword
+Status: NON-COMPLIANT
+Violations: Missing digit.
+Line: 5
+------------------------------
+Password: Pass123!
+Status: COMPLIANT
+Line: 6
+------------------------------
+Password: 12345678
+Status: NON-COMPLIANT
+Violations: Missing uppercase character.; Missing lowercase character.; Missing special character.
+Line: 7
+------------------------------
+Password: Password!
+Status: NON-COMPLIANT
+Violations: Missing digit.
+Line: 8
+------------------------------

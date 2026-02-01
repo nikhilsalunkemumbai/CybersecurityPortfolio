@@ -1,0 +1,22 @@
+--- SSL Certificate Expiry Report ---
+
+Host: google.com:443
+Status: VALID
+Expiry Date: 2026-03-23
+Days Left: 52
+------------------------------
+Host: example.com:443
+Status: VALID
+Expiry Date: 2026-03-16
+Days Left: 45
+------------------------------
+Host: expired.badssl.com:443
+Status: EXPIRED
+Expiry Date: 2015-04-12
+Days Left: -3945
+------------------------------
+Host: wrong.host.badssl.com:443
+Status: VALID
+Expiry Date: 2026-04-20
+Days Left: 80
+------------------------------

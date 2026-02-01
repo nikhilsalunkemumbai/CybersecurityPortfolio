@@ -1,0 +1,2 @@
+Security Linter Report:
+- Weak setting: 'api_key_length' has length less than 8. Recommended minimum: 8.

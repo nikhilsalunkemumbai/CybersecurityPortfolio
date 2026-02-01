@@ -1,0 +1,3 @@
+[REDACTED]
+bad.domain.com
+malware_hash_123

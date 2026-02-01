@@ -1,0 +1,6 @@
+--- Network Service Monitor Report ---
+
+Service: [REDACTED]:80
+Status: DOWN
+Error: dial tcp [REDACTED]:80: connectex: No connection could be made because the target machine actively refused it.
+------------------------------

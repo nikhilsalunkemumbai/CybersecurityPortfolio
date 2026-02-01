@@ -1,0 +1,7 @@
+# Secure Configuration Example
+database_url="https://secure.db:5432"
+debug_mode=false
+admin_password="secure_random_password_123!"
+log_level="INFO"
+api_key_length=32
+server_port=8443

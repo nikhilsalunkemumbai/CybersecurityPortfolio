@@ -1,0 +1,7 @@
+--- SSL Certificate Expiry Report ---
+
+Host: google.com:443
+Status: VALID
+Expiry Date: 2026-03-23
+Days Left: 52
+------------------------------

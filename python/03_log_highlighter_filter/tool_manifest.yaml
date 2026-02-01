@@ -1,0 +1,70 @@
+# Tool Manifest for: Log Highlighter & Filter
+
+# --- Metadata ---
+name: "Log Highlighter & Filter"
+tool_id: "phase1-py-03"
+phase: 1
+category: "Python"
+language: "Python"
+version: "1.0.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/PYTHON/03_log_highlighter_filter"
+
+# --- Logic & Purpose ---
+purpose: "Highlights keywords in log files and filters lines based on inclusion/exclusion patterns."
+core_logic:
+  - "Reads log data from an input file or stdin."
+  - "Applies color highlighting to specified keywords."
+  - "Filters lines based on include and exclude regex patterns."
+  - "Writes the processed log to an output file or stdout."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-30"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Planned"
+    date: "2026-01-30"
+    version: "0.1.0"
+    notes: "Tool design and purpose defined."
+  - event: "Implementation"
+    date: "2026-01-30"
+    version: "0.2.0"
+    notes: "Initial implementation of the log highlighting and filtering logic."
+  - event: "Testing"
+    date: "2026-01-30"
+    version: "1.0.0"
+    notes: "Tool executed successfully and output verified with sample data."
+  - event: "Completed"
+    date: "2026-01-30"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements."
+  - event: "Standards Validation & Re-test"
+    date: "2026-01-30"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and successfully re-tested."
+
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Uses argparse for consistent CLI flags: -i, -o, -k, --include, --exclude, -c, -v."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Exits with 0 on success, 1 on file not found or other processing errors. Prints errors to stderr."
+  logging_output_format:
+    applied: true
+    notes: "Uses [INFO] and [ERROR] prefixes for verbose output to stderr, consistent with guide."
+  testing_methodology_structure:
+    applied: true
+    notes: "Manual testing performed with sample input/output, demonstrating functionality."
+  declarative_tool_metadata:
+    applied: true
+    notes: "Tool description and usage are in the `README.md` and also as docstrings in the Python file. Aligns with intent of a metadata block."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool, not Phase 0."

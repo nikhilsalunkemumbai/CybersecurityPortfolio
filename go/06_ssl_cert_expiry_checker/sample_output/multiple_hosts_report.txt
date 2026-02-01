@@ -1,0 +1,26 @@
+--- SSL Certificate Expiry Report ---
+
+Host: wrong.host.badssl.com:443
+Status: ERROR
+Expiry Date: N/A
+Days Left: N/A
+Error: TLS connection failed: dial tcp [REDACTED]:443: i/o timeout
+------------------------------
+Host: expired.badssl.com:443
+Status: ERROR
+Expiry Date: N/A
+Days Left: N/A
+Error: TLS connection failed: dial tcp [REDACTED]:443: i/o timeout
+------------------------------
+Host: google.com:443
+Status: ERROR
+Expiry Date: N/A
+Days Left: N/A
+Error: TLS connection failed: context deadline exceeded
+------------------------------
+Host: example.com:443
+Status: ERROR
+Expiry Date: N/A
+Days Left: N/A
+Error: TLS connection failed: context deadline exceeded
+------------------------------

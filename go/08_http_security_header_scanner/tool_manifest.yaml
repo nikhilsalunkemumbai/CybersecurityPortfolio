@@ -1,0 +1,69 @@
+# Tool Manifest for: HTTP Security Header Scanner
+
+# --- Metadata ---
+name: "HTTP Security Header Scanner"
+tool_id: "phase1-go-08"
+phase: 1
+category: "Go"
+language: "Go"
+version: "0.1.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/GO/08_http_security_header_scanner"
+
+# --- Logic & Purpose ---
+purpose: "Analyzes HTTP response headers of specified URLs for common security headers."
+core_logic:
+  - "Makes HTTP GET requests to target URLs."
+  - "Extracts and evaluates security-related HTTP response headers."
+  - "Reports on presence, absence, and recommended configuration of security headers."
+  - "Can scan multiple URLs from an input file."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-30"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Planned"
+    date: "2026-01-30"
+    version: "0.1.0"
+    notes: "Tool design and purpose defined."
+  - event: "Implementation"
+    date: "2026-01-30"
+    version: "0.2.0"
+    notes: "Initial implementation of the HTTP security header scanning logic."
+  - event: "Testing"
+    date: "2026-01-30"
+    version: "1.0.0"
+    notes: "Tool executed successfully and output verified with sample data."
+  - event: "Completed"
+    date: "2026-01-30"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements."
+  - event: "Standards Validation & Retest"
+    date: "2026-01-30"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` (including Go-specific guidelines and time/space complexity analysis). Identified and fixed issues with newline in string and 'declared and not used' error. All functionality re-verified."
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Uses Go's `flag` package for consistent CLI flags: -u, -i, -o, -t, -v."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Exits with 0 on success, 1 on errors like invalid arguments or HTTP request failures. Prints errors to stderr."
+  logging_output_format:
+    applied: true
+    notes: "Uses [INFO] and [ERROR] prefixes for verbose output to stderr, consistent with guide."
+  testing_methodology_structure:
+    applied: true
+    notes: "Manual testing performed with sample input/output, demonstrating single and multiple URL scanning."
+  declarative_tool_metadata:
+    applied: true
+    notes: "Tool description and usage are in the `README.md` and also as comments in the Go file. Aligns with intent of a metadata block."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool, not Phase 0."

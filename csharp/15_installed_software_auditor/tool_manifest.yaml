@@ -1,0 +1,69 @@
+# Tool Manifest for: Installed Software Auditor
+
+# --- Metadata ---
+name: "Installed Software Auditor"
+tool_id: "phase1-cs-15"
+phase: 1
+category: "C#"
+language: "C#"
+version: "0.1.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/CSHARP/15_installed_software_auditor"
+
+# --- Logic & Purpose ---
+purpose: "Audits installed software on Windows systems to identify unauthorized or outdated applications."
+core_logic:
+  - "Enumerates installed applications using Windows APIs or registry queries."
+  - "Collects software metadata (name, version, publisher, install date)."
+  - "Filters or reports based on criteria (e.g., specific software, known vulnerabilities)."
+  - "Outputs a list of installed software for review."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Planned"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Tool design and purpose defined based on TRACKER.md."
+  - event: "Implementation"
+    date: "2026-01-31"
+    version: "0.2.0"
+    notes: "Initial C# code for argument parsing and registry-based software enumeration in src/Program.cs."
+  - event: "Testing"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool built successfully. Tested with `-l -v` arguments, confirmed successful enumeration and reporting of installed software."
+  - event: "Completed"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements, as a Proof of Concept."
+  - event: "Standards Validation"
+    date: "2026-01-31"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. All standards met, including <=300 lines of code. Confirmed usage of `System.CommandLine` and `Microsoft.Win32.Registry` for Windows-specific functionality."
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Will use `System.CommandLine` or manual parsing for consistent CLI flags: -l (list all), -f (filter by name), -o (output file), -v (verbose)."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Will exit with 0 on success, non-zero on access errors, invalid arguments, or enumeration issues. Errors printed to stderr."
+  logging_output_format:
+    applied: true
+    notes: "Will use [INFO] and [ERROR] prefixes for verbose output to stderr/console, consistent with guide."
+  testing_methodology_structure:
+    applied: false
+    notes: "Manual testing on a Windows system to verify accurate enumeration and filtering of installed software."
+  declarative_tool_metadata:
+    applied: true
+    notes: "Tool description and usage will be in the `README.md` and also as comments/doc-comments in the C# `Program.cs` file. Aligns with intent of a metadata block."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool, not Phase 0."

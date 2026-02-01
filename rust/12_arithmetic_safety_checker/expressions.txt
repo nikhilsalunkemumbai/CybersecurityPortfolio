@@ -1,0 +1,19 @@
+# Test expressions for u8
+250 + 10
+10 * 30
+127 + 1
+0 - 1
+
+# Test expressions for i8
+120 + 10
+-120 - 10
+50 * 3
+
+# Test expressions for i32[REDACTED] + 1
+-[REDACTED] - [REDACTED] * 3
+
+# Malformed expressions
+10 +
++ 5
+abc + 10
+10 / 0

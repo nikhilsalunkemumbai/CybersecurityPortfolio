@@ -1,0 +1,50 @@
+# .github/workflows/python-ci.yml
+name: Python Tools CI
+
+on:
+  push:
+    paths:
+      - 'python/**'
+      - '.github/workflows/python-ci.yml'
+  pull_request:
+    paths:
+      - 'python/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, 3.10]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Test Python tools
+      run: |
+        cd python
+        for tool in */; do
+          if [ -f "$tool/requirements.txt" ]; then
+            pip install -r "$tool/requirements.txt"
+          fi
+          if [ -d "$tool/tests" ]; then
+            cd "$tool"
+            python -m pytest tests/ -v --tb=short
+            cd ..
+          fi
+        done
+    
+    - name: Security scan (bandit)
+      run: |
+        pip install bandit
+        cd python
+        for tool in */; do
+          if [ -f "$tool/*.py" ]; then
+            bandit -r "$tool" -ll
+          fi
+        done

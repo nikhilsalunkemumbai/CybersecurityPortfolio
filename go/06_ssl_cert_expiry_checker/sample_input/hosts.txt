@@ -1,0 +1,4 @@
+google.com
+example.com:443
+expired.badssl.com
+wrong.host.badssl.com

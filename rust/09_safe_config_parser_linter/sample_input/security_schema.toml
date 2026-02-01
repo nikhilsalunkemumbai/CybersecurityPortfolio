@@ -1,0 +1,6 @@
+# Security Schema Example (Simplified)
+database_url=https://
+debug_mode=false
+admin_password=no_default_password
+log_level=INFO
+api_key_length=min_length_8

@@ -1,0 +1,14 @@
+---
+--- HTTP Security Header Scan Report ---
+
+URL: https://google.com
+Status: OK
+--- Found Security Headers ---
+  X-Frame-Options: SAMEORIGIN
+--- Missing Recommended Headers ---
+  Strict-Transport-Security: Strict-Transport-Security (HSTS) enforces secure connections.
+  X-Content-Type-Options: X-Content-Type-Options prevents MIME sniffing.
+  Content-Security-Policy: Content-Security-Policy (CSP) prevents XSS and data injection attacks.
+  Referrer-Policy: Referrer-Policy controls how much referrer information is sent.
+  Permissions-Policy: Permissions-Policy allows/disallows use of browser features.
+------------------------------

@@ -1,0 +1,7 @@
+This is a printable string.
+This also has numbers 12345 and symbols !@#$%^.
+Some null bytes \x00\x01\x02 interspersed.
+Another string here.
+Short str.
+Longer string with a few more words.
+And a string at the very end.

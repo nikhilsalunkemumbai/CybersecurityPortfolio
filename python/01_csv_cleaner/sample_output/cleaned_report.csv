@@ -1,0 +1,5 @@
+Plugin ID,CVE,CVSS,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,Severity
+56984,,,10.0.0.2,tcp,443,SSL / TLS Versions Supported,,This plugin detects which SSL and TLS versions are supported by the remote service.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.0 and 1.1.",,,Medium
+104743,CVE-2017-5754,,10.0.0.2,tcp,443,Spectre Attack Vulnerability,,A vulnerability exists in the processor that could allow an attacker to read sensitive information.,Upgrade the kernel.,https://www.kb.cert.org/vuls/id/584653,,High
+134942,CVE-2020-0796,10,10.0.0.5,tcp,445,SMBv3 RCE 'Wormable' Vulnerability,,A remote code execution vulnerability exists in Microsoft Server Message Block 3.1.1 (SMBv3).,Apply the appropriate patch.,https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200005,,Critical
+11195,,5,10.0.0.7,tcp,1433,Microsoft SQL Server Unsupported Version,,The remote Microsoft SQL Server is an unsupported version.,Upgrade to a supported version of Microsoft SQL Server.,,,Medium

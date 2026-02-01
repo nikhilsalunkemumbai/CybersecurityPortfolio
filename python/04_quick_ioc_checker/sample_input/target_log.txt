@@ -1,0 +1,6 @@
+INFO: User 'admin' logged in from [REDACTED].
+WARNING: Failed attempt to access /admin from [REDACTED].
+ERROR: Downloaded file 'report.zip' with hash 'malware_hash_123'.
+INFO: User 'guest' logged out.
+DEBUG: Connecting to bad.domain.com for updates.
+ERROR: Critical system failure.

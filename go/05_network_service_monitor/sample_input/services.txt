@@ -1,0 +1,4 @@
+[REDACTED]:80
+example.com:443
+[REDACTED]:22
+nonexistent.host:8080

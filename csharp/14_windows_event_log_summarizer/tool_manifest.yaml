@@ -1,0 +1,69 @@
+# Tool Manifest for: Windows Event Log Summarizer
+
+# --- Metadata ---
+name: "Windows Event Log Summarizer"
+tool_id: "phase1-cs-14"
+phase: 1
+category: "C#"
+language: "C#"
+version: "0.1.0"
+status: "Validated (Standards)" # Lifecycle: Planned -> In-Progress -> Completed -> Documented -> Tested -> Pushed -> Validated (Standards)
+
+# --- Location & Structure ---
+directory: "phase_1/CSHARP/14_windows_event_log_summarizer"
+
+# --- Logic & Purpose ---
+purpose: "Parses Windows Event Logs to summarize key security events, errors, or anomalies."
+core_logic:
+  - "Connects to local or remote Windows Event Logs."
+  - "Filters events based on criteria (e.g., event ID, source, time range, level)."
+  - "Aggregates and summarizes events."
+  - "Outputs a concise report (e.g., count of specific event IDs, critical errors per hour)."
+
+# --- Lifecycle & Version Control ---
+lifecycle:
+  - event: "Created"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Initial directory structure and manifest file created."
+  - event: "Planned"
+    date: "2026-01-31"
+    version: "0.1.0"
+    notes: "Tool design and purpose defined based on TRACKER.md."
+  - event: "Implementation"
+    date: "2026-01-31"
+    version: "0.2.0"
+    notes: "Initial C# code for argument parsing, basic event log query, and time range parsing in src/Program.cs."
+  - event: "Testing"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool built successfully (after fixing missing package reference and casting issue). Tested with 'Application' log and verbose output, confirmed successful summarization."
+  - event: "Completed"
+    date: "2026-01-31"
+    version: "1.0.0"
+    notes: "Tool is fully implemented, documented, and tested according to portfolio requirements, as a Proof of Concept."
+  - event: "Standards Validation"
+    date: "2026-01-31"
+    version: "1.0.1"
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. All standards met, including <=300 lines of code. Confirmed usage of `System.CommandLine`, `System.Diagnostics.Eventing.Reader`, and `System.Diagnostics.EventLog` for Windows-specific functionality."
+
+# --- Shared Abstractions Application ---
+shared_abstractions:
+  cli_argument_parsing:
+    applied: true
+    notes: "Will use `System.CommandLine` or manual parsing for consistent CLI flags: -l (log name), -f (filter), -t (time range), -o (output file), -v (verbose)."
+  error_handling_exit_codes:
+    applied: true
+    notes: "Will exit with 0 on success, non-zero on event log access errors, invalid arguments, or parsing issues. Errors printed to stderr."
+  logging_output_format:
+    applied: true
+    notes: "Will use [INFO] and [ERROR] prefixes for verbose output to stderr/console, consistent with guide."
+  testing_methodology_structure:
+    applied: false
+    notes: "Manual testing with sample event logs (or simulated logs) will be performed. A formal test suite might be considered if complexity warrants."
+  declarative_tool_metadata:
+    applied: true
+    notes: "Tool description and usage will be in the `README.md` and also as comments/doc-comments in the C# `Program.cs` file. Aligns with intent of a metadata block."
+  how_it_relates_doc:
+    applied: false
+    notes: "N/A - This is a Phase 1 tool, not Phase 0."

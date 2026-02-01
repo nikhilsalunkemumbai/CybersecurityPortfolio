@@ -1,0 +1,14 @@
+2: OK: 250 + 10 = 260
+3: OK: 10 * 30 = 300
+4: OK: 127 + 1 = 128
+5: OK: 0 - 1 = -1
+8: OK: 120 + 10 = 130
+9: OK: -120 - 10 = -130
+10: OK: 50 * 3 = 150
+13: WARNING: Overflow detected for[REDACTED] + 1 as i32
+14: WARNING: Underflow detected for -[REDACTED] - 1 as i32
+15: WARNING: Overflow detected for[REDACTED] * 3 as i32
+18: WARN: Skipping malformed expression: 10 +
+19: WARN: Skipping malformed expression: + 5
+20: ERROR: Invalid operand 'abc' for type I32 in expression: abc + 10
+21: ERROR: Division by zero detected in expression: 10 / 0

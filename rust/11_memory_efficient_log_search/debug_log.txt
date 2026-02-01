@@ -1,0 +1,4 @@
+DEBUG: Connection established to database
+DEBUG: Cleaning up temporary files
+DEBUG: Cache cleared
+DEBUG: Performing routine maintenance

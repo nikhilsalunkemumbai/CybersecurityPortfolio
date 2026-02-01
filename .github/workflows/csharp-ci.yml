@@ -1,0 +1,36 @@
+# .github/workflows/csharp-ci.yml
+name: CSharp Tools CI
+
+on:
+  push:
+    paths:
+      - 'csharp/**'
+      - '.github/workflows/csharp-ci.yml'
+  pull_request:
+    paths:
+      - 'csharp/**'
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest # C# tools for Windows (e.g., AD, Event Logs) often need Windows runner
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x' # Target framework for Phase 1 C# tools
+        
+    - name: Build and Test C# tools
+      run: |
+        cd csharp
+        foreach ($tool in (Get-ChildItem -Directory)) {
+            if (Test-Path "$tool/*.csproj") {
+                Write-Host "Building and Testing: $($tool.Name)"
+                Push-Location $tool.Name
+                dotnet restore
+                dotnet build --no-restore
+                dotnet test --no-build --verbosity normal # --no-build assumes successful build in previous step
+                Pop-Location
+            }
+        }
