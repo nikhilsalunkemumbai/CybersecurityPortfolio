@@ -68,7 +68,7 @@ Focused on the Windows ecosystem, these C# tools demonstrate the ability to inte
 ### Quick Start
 ```bash
 # Clone repository
-git clone https://github.com/nikhilsalunkemumbai/cybersecurity-tools.git
+git clone https://github.com/nikhilsalunkemumbai/CybersecurityPortfolio.git
 cd cybersecurity-tools
 
 # Run setup script (optional)

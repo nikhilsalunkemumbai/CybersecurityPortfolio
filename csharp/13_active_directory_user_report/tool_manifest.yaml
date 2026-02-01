@@ -29,7 +29,7 @@ lifecycle:
   - event: "Planned"
     date: "2026-01-31"
     version: "0.1.0"
-    notes: "Tool design and purpose defined based on TRACKER.md."
+    notes: "Tool design and purpose defined based on TRACKER."
   - event: "Implementation"
     date: "2026-01-31"
     version: "0.2.0"
@@ -45,7 +45,7 @@ lifecycle:
   - event: "Standards Validation"
     date: "2026-01-31"
     version: "1.0.1"
-    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. Refactored to consolidate logic into `Program.cs` and removed `ADService.cs` to meet <=300 lines of code constraint. All standards met. Confirmed usage of `System.DirectoryServices` for AD interaction."
+    notes: "Tool's code validated against `PROGRAMMING STANDARDS` and `SHARED ABSTRACTIONS CHECKLIST`. Refactored to consolidate logic into `Program.cs` and removed `ADService.cs` to meet <=300 lines of code constraint. All standards met. Confirmed usage of `System.DirectoryServices` for AD interaction."
 
 # --- Shared Abstractions Application ---
 shared_abstractions:

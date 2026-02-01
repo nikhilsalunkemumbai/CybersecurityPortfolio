@@ -1,4 +1,4 @@
-# Cybersecurity Portfolio - Phase 1: 15 Bite-Sized Security Tools
+Cybersecurity Portfolio: A Collection of 15 Security Tool Demonstrations
 
 ## 🛡️ Overview
 
@@ -42,7 +42,7 @@ This repository contains **15 security tools** demonstrating practical cybersecu
 ### Quick Start
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/cybersecurity-tools-phase1.git
+git clone https://github.com/nikhilsalunkemumbai/CybersecurityPortfolio.git
 cd cybersecurity-tools-phase1
 
 # Run setup script (optional)

@@ -39,7 +39,7 @@ It will implement logic to:
 
 ## Shared Abstractions
 
-This tool adheres to the project's [Shared Abstraction Principles](../../../CONTEXT/SHARED_ABSTRACTIONS_CHECKLIST.md), specifically:
+This tool adheres to the project's [Shared Abstraction Principles], specifically:
 *   **Consistent CLI Argument Parsing:** Command-line arguments will be parsed using a standardized approach (e.g., `System.CommandLine`), providing clear `-l`, `-f`, `-o`, `-v`, and other relevant flags.
 *   **Standardized Error Handling & Exit Codes:** The tool will exit with `0` on success and non-zero codes for specific errors (e.g., `1` for invalid arguments, `2` for access denied), directing error messages to `stderr`.
 *   **Unified Logging/Output Format:** Informational messages, warnings, and errors will be formatted consistently with `[INFO]`, `[WARNING]`, `[ERROR]` prefixes when verbose output is enabled.
@@ -47,7 +47,7 @@ This tool adheres to the project's [Shared Abstraction Principles](../../../CONT
 
 ## Constraints
 
-This tool adheres to the [Programming Standards, Discipline, and Constraints](../../../CONTEXT/PROGRAMMING_STANDARDS.md) defined for this portfolio, including:
+This tool adheres to the [Programming Standards, Discipline, and Constraints] defined for this portfolio, including:
 *   **Line Limit:** The core logic will be constrained to approximately 300 lines of code to ensure conciseness and focus.
 *   **Standard Library Only:** Relies primarily on .NET standard libraries for registry interaction and data processing.
 *   **CLI-Only Interface:** Provides functionality exclusively through a command-line interface.

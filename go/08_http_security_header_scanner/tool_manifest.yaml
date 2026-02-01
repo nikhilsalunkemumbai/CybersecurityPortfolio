@@ -45,7 +45,7 @@ lifecycle:
   - event: "Standards Validation & Retest"
     date: "2026-01-30"
     version: "1.0.1"
-    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` (including Go-specific guidelines and time/space complexity analysis). Identified and fixed issues with newline in string and 'declared and not used' error. All functionality re-verified."
+    notes: "Tool's code validated against `PROGRAMMING STANDARDS` and `SHARED ABSTRACTIONS CHECKLIST` (including Go-specific guidelines and time/space complexity analysis). Identified and fixed issues with newline in string and 'declared and not used' error. All functionality re-verified."
 
 # --- Shared Abstractions Application ---
 shared_abstractions:

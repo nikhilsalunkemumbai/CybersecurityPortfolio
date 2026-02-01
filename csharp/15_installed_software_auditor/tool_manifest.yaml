@@ -29,7 +29,7 @@ lifecycle:
   - event: "Planned"
     date: "2026-01-31"
     version: "0.1.0"
-    notes: "Tool design and purpose defined based on TRACKER.md."
+    notes: "Tool design and purpose defined based on TRACKER."
   - event: "Implementation"
     date: "2026-01-31"
     version: "0.2.0"
@@ -45,7 +45,7 @@ lifecycle:
   - event: "Standards Validation"
     date: "2026-01-31"
     version: "1.0.1"
-    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. All standards met, including <=300 lines of code. Confirmed usage of `System.CommandLine` and `Microsoft.Win32.Registry` for Windows-specific functionality."
+    notes: "Tool's code validated against `PROGRAMMING_STANDARDS` and `SHARED_ABSTRACTIONS_CHECKLIST`. All standards met, including <=300 lines of code. Confirmed usage of `System.CommandLine` and `Microsoft.Win32.Registry` for Windows-specific functionality."
 
 # --- Shared Abstractions Application ---
 shared_abstractions:

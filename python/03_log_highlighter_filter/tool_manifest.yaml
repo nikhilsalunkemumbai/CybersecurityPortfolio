@@ -45,7 +45,7 @@ lifecycle:
   - event: "Standards Validation & Re-test"
     date: "2026-01-30"
     version: "1.0.1"
-    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and successfully re-tested."
+    notes: "Tool's code validated against `PROGRAMMING STANDARDS` and `SHARED ABSTRACTIONS CHECKLIST` and successfully re-tested."
 
 
 # --- Shared Abstractions Application ---

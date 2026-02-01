@@ -29,7 +29,7 @@ lifecycle:
   - event: "Planned"
     date: "2026-01-31"
     version: "0.1.0"
-    notes: "Tool design and purpose defined based on TRACKER.md."
+    notes: "Tool design and purpose defined based on TRACKER."
   - event: "Implementation"
     date: "2026-01-31"
     version: "0.2.0"
@@ -45,7 +45,7 @@ lifecycle:
   - event: "Standards Validation"
     date: "2026-01-31"
     version: "1.0.1"
-    notes: "Tool's code validated against `PROGRAMMING_STANDARDS.md` and `SHARED_ABSTRACTIONS_CHECKLIST.md`. All standards met, including <=300 lines of code. Fixed `Debug` trait derivation and removed unused warnings during the process."
+    notes: "Tool's code validated against `PROGRAMMING STANDARDS` and `SHARED ABSTRACTIONS CHECKLIST`. All standards met, including <=300 lines of code. Fixed `Debug` trait derivation and removed unused warnings during the process."
 
 # --- Shared Abstractions Application ---
 shared_abstractions:

@@ -12,7 +12,7 @@ The **Safe Config Parser & Linter** is a command-line utility designed to parse 
 ## Usage
 
 ### Prerequisites
-*   Rust toolchain (version specified in `PROGRAMMING_STANDARDS.md`).
+*   Rust toolchain
 
 ### Build
 ```bash
